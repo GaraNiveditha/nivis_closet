@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nivis_closet | Indian Women's Fashion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+      .cursive-heading {
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #a65365;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f8f5ef;
+            color: #29231f;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            border-bottom: 1px solid #e9e2d9;
+            background: #f8f5ef;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #713c45;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #504741;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #a34f62;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            color: #504741;
+            font-size: 14px;
+        }
+
+        .shop-btn {
+            background: #713c45;
+            color: white !important;
+            padding: 12px 22px;
+            border-radius: 30px;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 690px;
+            display: grid;
+            grid-template-columns: 1fr 1.15fr 1fr;
+            align-items: center;
+            padding: 55px 5%;
+            gap: 25px;
+            overflow: hidden;
+        }
+
+        .side-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .side-gallery img {
+            width: 100%;
+            height: 245px;
+            object-fit: cover;
+            border-radius: 16px;
+            transition: transform 0.5s;
+        }
+
+        .side-gallery img:hover {
+            transform: scale(1.025);
+        }
+
+        .left-gallery img:first-child {
+            height: 285px;
+            width: 88%;
+            align-self: flex-end;
+        }
+
+        .left-gallery img:last-child {
+            height: 190px;
+            width: 72%;
+            align-self: flex-start;
+        }
+
+        .right-gallery img:first-child {
+            height: 190px;
+            width: 75%;
+            align-self: flex-end;
+        }
+
+        .right-gallery img:last-child {
+            height: 285px;
+            width: 90%;
+            align-self: flex-start;
+        }
+
+        .hero-content {
+            text-align: center;
+            padding: 20px 5px;
+        }
+
+        .tagline {
+            display: inline-block;
+            border: 1px solid #d9c5b9;
+            color: #95636a;
+            padding: 9px 18px;
+            border-radius: 30px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(42px, 5vw, 67px);
+            line-height: 1.13;
+            font-weight: 600;
+            color: #332923;
+        }
+
+        .hero h1 span {
+            color: #a65365;
+            font-style: italic;
+        }
+
+        .hero-content p {
+            color: #756c64;
+            font-size: 15px;
+            line-height: 1.9;
+            margin: 25px auto 30px;
+            max-width: 410px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            text-decoration: none;
+            padding: 15px 26px;
+            border-radius: 30px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .primary-btn {
+            background: #713c45;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #502831;
+            transform: translateY(-3px);
+        }
+
+        .secondary-btn {
+            border: 1px solid #bda99d;
+            color: #5b4940;
+        }
+
+        .secondary-btn:hover {
+            background: #eee6dd;
+        }
+
+        .hero-note {
+            margin-top: 35px;
+            color: #9b8d82;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        /* CATEGORIES */
+
+        .categories {
+            padding: 75px 7%;
+            background: #fffdf9;
+            text-align: center;
+        }
+
+        .section-label {
+            color: #a65365;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 11px;
+            margin-bottom: 14px;
+        }
+
+        .categories h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 39px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .category-card {
+            text-decoration: none;
+            color: #332923;
+            text-align: center;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: 0.4s;
+        }
+
+        .category-card:hover img {
+            transform: translateY(-7px);
+        }
+
+        .category-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 19px;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        /* BRAND MESSAGE */
+
+        .brand-message {
+            padding: 85px 20px;
+            text-align: center;
+            background: #eee5dc;
+        }
+
+        .brand-message h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            color: #713c45;
+            margin-bottom: 18px;
+        }
+
+        .brand-message p {
+            color: #70635b;
+            font-size: 14px;
+            line-height: 1.9;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* FOOTER */
+
+        footer {
+            padding: 30px 7%;
+            background: #302722;
+            color: #e8dcd1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 12px;
+        }
+
+        footer .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 23px;
+            letter-spacing: 2px;
+        }
+
+        /* MOBILE RESPONSIVE */
+
+        @media(max-width: 900px) {
+            .hero {
+                grid-template-columns: 0.8fr 1.2fr;
+            }
+
+            .right-gallery {
+                display: none;
+            }
+
+            .category-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            nav {
+                height: auto;
+                padding: 20px 5%;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .logo {
+                font-size: 25px;
+            }
+
+            .nav-links {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                gap: 18px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .nav-right a:first-child {
+                display: none;
+            }
+
+            .hero {
+                display: flex;
+                flex-direction: column;
+                padding: 35px 6%;
+            }
+
+            .hero-content {
+                order: 1;
+            }
+
+            .left-gallery {
+                order: 2;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .left-gallery img:first-child,
+            .left-gallery img:last-child {
+                width: 48%;
+                height: 180px;
+                align-self: auto;
+            }
+
+            .hero h1 {
+                font-size: 46px;
+            }
+
+            .categories {
+                padding: 55px 5%;
+            }
+
+            .categories h2 {
+                font-size: 31px;
+            }
+
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px 14px;
+            }
+
+            .category-card img {
+                height: 190px;
+            }
+
+            .brand-message h2 {
+                font-size: 31px;
+            }
+
+            footer {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="logo">nivis_closet.</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#categories">Collections</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="app.html">Login</a>
+            <a href="app.html" class="shop-btn">Shop Now</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="side-gallery left-gallery">
+            <img
+                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85"
+                alt="Elegant traditional Indian saree">
+
+            <img
+                src="https://images.unsplash.com/photo-1583391733956-6c78276477e5?auto=format&fit=crop&w=700&q=85"
+                alt="Indian women's fashion">
+        </div>
+
+        <div class="hero-content">
+
+            <div class="tagline">The beauty of Indian tradition</div>
+
+           <h1 class="cursive-heading">
+           Feminine<br>
+           in Elegance.
+          </h1>
+            <p>
+                Discover a beautiful world of sarees, ethnic wear
+                and designer dresses. Celebrate every moment
+                with timeless Indian fashion.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="app.html" class="primary-btn">Explore Collection →</a>
+                <a href="#categories" class="secondary-btn">Discover More</a>
+            </div>
+
+            <div class="hero-note">
+                MADE WITH LOVE · WORN WITH PRIDE
+            </div>
+
+        </div>
+
+        <div class="side-gallery right-gallery">
+            <img
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=85"
+                alt="Traditional fashion collection">
+
+            <img
+                src="https://images.unsplash.com/photo-1610030469668-8e9f641a8f7a?auto=format&fit=crop&w=700&q=85"
+                alt="Beautiful ethnic outfit">
+        </div>
+
+    </section>
+
+    <!-- CATEGORIES -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-label">Find your style</div>
+
+        <h2>Explore Our Collections</h2>
+
+        <div class="category-grid">
+
+            <a href="app.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=85" alt="Fancy Wear">
+                <h3>Fancy Wear</h3>
+            </a>
+
+            <a href="app.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=500&q=85" alt="Traditional outfits">
+                <h3>Ethnic Wear</h3>
+            </a>
+
+            <a href="app.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=85" alt="Festive fashion">
+                <h3>Fancy Wear</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="brand-message" id="about">
+
+        <h2>Tradition Meets Elegance</h2>
+
+        <p>
+            At nivis_closet, every outfit tells a story.
+            From timeless Fancy Wear to contemporary designer
+            dresses, find something special for every occasion.
+            Bring home the beauty of Indian fashion.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-logo">nivis_closet.</div>
+        <p>© 2026 nivis_closet. All Rights Reserved.</p>
+        <p>Made with ♥ for every woman.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
